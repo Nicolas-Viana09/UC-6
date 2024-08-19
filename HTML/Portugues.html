@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>BibliONteca</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body">
+            <div class="container-fluid">
+                <a class="imagem" href="index.html"><img src="img/b (3).png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li> 
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="PaginadeInsercao.html">Página de inserção</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Máterias</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="Portugues.html">Linguagens e suas Tecnologias</a></li>
+                                <li><a class="dropdown-item" href="Matematica.html">Matemática e suas Tecnologias</a></li>
+                                <li><a class="dropdown-item" href="CienciasHumanas.html">Ciências Humanas e Sociais Aplicadas</a></li>
+                                <li><a class="dropdown-item" href="CienciasNatureza.html">Ciências da Natureza e suas Tecnologias</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobrenos.html">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contato.html">Contate-nos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2" type="search" id="pesquisa" placeholder="Busca" aria-label="Search">
+                        <button class="btn btn-outline-success" id="btnPesquisar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="cadastro ms-2 d-none d-lg-block"> 
+                        <a href="Cadastro.html" style="color: white;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                            </svg> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" style="color: rgb(255, 255, 255);">Home</a></li>
+                <li class="breadcrumb-item"><a href="Portugues.html" style="color: rgb(255, 255, 255);">Linguagens e suas Tecnologias</a></li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container">
+        <p>Explore um universo fascinante onde a comunicação e a inovação se encontram. Nesta seção, mergulhe nos conceitos fundamentais e nas tendências mais atuais das linguagens de programação, aprimorando suas habilidades e conhecimentos para enfrentar os desafios tecnológicos do futuro.</p>
+        <h1>Linguagens e suas Tecnologias</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-6 col-lg-4 livro" titulo="Natureza em Pauta">
+               <a href="NaturezaemPauta.html"><img src="Livros/Linguagens/Natureza em Pauta.png" class="img-fluid"></a> 
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 livro" titulo="Natureza em Pauta">
+                <h3>Natureza em Pauta</h3>  
+                <p>Neste volume, são estudados o papel da natureza na construção da identidade brasileira, a ação humana e sua interferência no ambiente, e a preservação da natureza.</p>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4 livro" titulo="Diversidades: Lugares, Falas e Culturas">
+                <a href="Diversidades.html"><img src="Livros/Linguagens/Diversidades.png" class="img-fluid"></a> 
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 livro" titulo="Diversidades: Lugares, Falas e Culturas">
+                <h3>Diversidades: Lugares, Falas e Culturas</h3>
+                <p>O volume explora a diversidade das manifestações artísticas, culturais, linguísticas, esportivas e sociais no Brasil e no mundo, identificando nelas um patrimônio a ser reconhecido e valorizado.</p>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4 livro" titulo="Identidades">
+               <a href="Identidades.html"><img src="Livros/Linguagens/Identidades.png" class="img-fluid"></a> 
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 livro" titulo="Identidades">
+                <h3>Identidades</h3>
+                <p>Neste volume, o estudante é convidado a ampliar seu olhar sobre a sua própria identidade e a dos grupos em que está inserido, por meio de reflexões sobre as trocas na vida em sociedade.</p>
+            </div>
+            <div class="col-6 col-md-6 col-lg-4 livro" titulo="Mundo do Trabalho"><br><br>
+                <a href="MundodoTrabalho.html"><img src="Livros/Linguagens/Mundodotrabalho.png" class="img-fluid"></a> 
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 livro" titulo="Mundo do Trabalho"><br><br>
+                <h3>Mundo do Trabalho</h3>
+                <p>Este volume traz reflexões para o estudante sobre como o ser humano se relaciona com o trabalho e sobre quais são os conflitos e as oportunidades gerados por essa estrutura produtiva para a sociedade.</p>
+            </div>
+        </div>
+    </div>   
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>BibliONteca</h5>
+                    <p>Explore um universo fascinante de conhecimentos. Todos os direitos reservados © 2024.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <h5>Navegue por BibliOnteca</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light">Home</a></li>
+                        <li><a href="Portugues.html" class="text-light">Linguagens e suas Tecnologias</a></li>
+                        <li><a href="Matematica.html" class="text-light">Matemática e suas Tecnologias</a></li>
+                        <li><a href="CienciasHumanas.html" class="text-light">Ciências Humanas e Sociais Aplicadas</a></li>
+                        <li><a href="CienciasNatureza.html" class="text-light">Ciências da Natureza e suas Tecnologias</a></li>
+                        <li><a href="sobrenos.html" class="text-light">Sobre nós</a></li>
+                        <li><a href="Contato.html" class="text-light">Contate-nos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </footer>
+    <script src="JS/pesquisa.js">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>BibliONteca</title>
+    <link rel="icon" href="img/b (3).png">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body">
+            <div class="container-fluid">
+                <a class="imagem" href="index.html"><img src="img/b (3).png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span style="color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li> 
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page" href="PaginadeInsercao.html">Página de inserção</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Máterias</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="Portugues.html">Linguagens e suas Tecnologias</a></li>
+                                <li><a class="dropdown-item" href="Matematica.html">Matemática e suas Tecnologias</a></li>
+                                <li><a class="dropdown-item" href="CienciasHumanas.html">Ciências Humanas e Sociais Aplicadas</a></li>
+                                <li><a class="dropdown-item" href="CienciasNatureza.html">Ciências da Natureza e suas Tecnologias</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobrenos.html">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Contato.html">Contate-nos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex ms-auto" role="search">
+                        <input class="form-control me-2" type="search" id="pesquisa" placeholder="Busca" aria-label="Search">
+                        <button class="btn btn-outline-success" id="btnPesquisar">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="cadastro ms-2 d-none d-lg-block"> 
+                        <a href="Cadastro.html" style="color: white;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                            </svg> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/banner22.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="img/bn novo.png" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+            <img src="img/bn3.jpg" class="d-block w-100">
+        </div>
+    </div> 
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container">
+    <h1>Novos Livros</h1>
+    <div class="row" id="booksContainer">
+        <div class="col-6 col-md-6 col-lg-4 livro" titulo="Natureza em Pauta">
+            <a href="NaturezaemPauta.html"><img src="Livros/Linguagens/Natureza em Pauta.png" class="img-fluid"></a> 
+        </div>
+        <div class="col-6 col-md-6 col-lg-2 livro" titulo="Natureza em Pauta">
+            <h3>Natureza em Pauta</h3>  
+            <p>Neste volume, são estudados o papel da natureza na construção da identidade brasileira, a ação humana e sua interferência no ambiente, e a preservação da natureza.</p>
+        </div>
+        <div class="col-6 col-md-6 col-lg-4 livro" titulo="Sequências e Trigonometria">
+            <a href="trigonometria.html"><img src="Livros/Matematica/Sequenciasetrigonometria.png" class="img-fluid"></a>
+        </div>
+        <div class="col-6 col-md-6 col-lg-2 livro" titulo="Sequências e Trigonometria">
+            <h3>Sequências e Trigonometria</h3>
+            <p>Aborda conceitos de sequências numéricas, noções iniciais de linguagem de programação e o campo da Trigonometria.</p>
+        </div>
+        <div class="col-6 col-md-6 col-lg-4 livro" titulo="Trabalho, tecnologia e Desigualdade">
+            <a href="desigualdade.html"><img src="Livros/CienciasHumanas/trabalho, tecnologia e desigualdade.png" class="img-fluid"></a>
+        </div>
+        <div class="col-6 col-md-6 col-lg-2 livro" titulo="Trabalho, tecnologia e Desigualdade">
+            <h3>Trabalho, tecnologia e Desigualdade</h3>
+            <p>As propostas deste volume oferecem um quadro geral do mundo do trabalho no passado e no presente, permitindo que o estudante reflita sobre sua escolha profissional e seu projeto de vida.</p>
+        </div>
+        <div class="col-6 col-md-6 col-lg-4 livro" titulo="Origens">
+            <a href="origens.html"><img src="Livros/Cienciasdanatureza/origens.png" class="img-fluid"></a>
+        </div>
+        <div class="col-6 col-md-6 col-lg-2 livro " titulo="Origens">
+            <h3>Origens</h3>
+            <p>Volume destinado ao estudo sobre a origem e a evolução do Universo e dos seres vivos, entre os quais os seres humanos.</p>
+        </div>
+    </div>
+
+    <div class="card container">
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>"Que ninguém se engane, só se consegue a simplicidade através de muito trabalho."</p>
+                <footer cite title="Source Title"> — Clarice Lispector</cite></footer>
+            </blockquote>  
+        </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>BibliONteca</h5>
+                <p>Explore um universo fascinante de conhecimentos. Todos os direitos reservados © 2024.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <h5>Navegue por BibliOnteca</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-light">Home</a></li>
+                    <li><a href="Portugues.html" class="text-light">Linguagens e suas Tecnologias</a></li>
+                    <li><a href="Matématica.html" class="text-light">Matématica e suas Tecnologias</a></li>
+                    <li><a href="CienciasHumanas.html" class="text-light">Ciências Humanas e Sociais Aplicadas</a></li>
+                    <li><a href="CienciasNatureza.html" class="text-light">Ciências da Natureza e suas Tecnologias</a></li>
+                    <li><a href="sobrenos.html" class="text-light">Sobre nós</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <script src="JS/pesquisa.js"></script>
+</body>
+</html>
